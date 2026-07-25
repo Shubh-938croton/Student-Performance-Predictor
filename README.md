@@ -139,17 +139,17 @@ http://127.0.0.1:5000
 
 ### Home Page
 
-![alt text](<Screenshot 2026-07-25 143542.png>)
+![alt text](screenshots/home.png)
 
 ### Prediction Result
 
-![alt text](<Screenshot 2026-07-25 144100.png>)
+![alt text](screenshots/prediction.png)
 
 ---
 
 ### Validation
 
-![alt text](<Screenshot 2026-07-25 143713.png>)
+![alt text](screenshots/validation.png)
 
 ## 🔮 Future Improvements
 
