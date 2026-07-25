@@ -13,9 +13,9 @@ This project demonstrates the complete Machine Learning workflow, from **data pr
 
 # 🌍 Live Demo
 
-🚀 **Coming Soon**
+ https://student-performance-predictor-2ilc.onrender.com
 
-*(Will be deployed on Render.)*
+
 
 ---
 
@@ -302,7 +302,7 @@ Passionate about building intelligent web applications by combining **Machine Le
 ### Connect with me
 
 - GitHub: https://github.com/Shubh-938croton
-- LinkedIn: https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME/
+- LinkedIn: https://www.linkedin.com/in/shubh-kamal-7aab72382/
 
 ---
 
