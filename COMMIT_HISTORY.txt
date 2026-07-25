@@ -1,0 +1,50 @@
+fd71f32 resolve the readme file issue.
+11c7c1b Updated: the README.md .
+8fad681 resolved: not placed bug .
+c4c3d28 Tested the website and also make the prediction but it always shows not placed for every conditions.
+c332a10 successfully take the input and also printed the prediction on web page using flask framework.
+ba24b61 generate the web page to take input from user and also connect the frontend and backened using flask.
+2b762af Learn what is flask what is its task and how to write the flask code.
+e2daff3 ml basics completed.
+9d683b1 Successfully loaded the saved model.
+f257353 Save the model and also solved the saving the file in desired directory.
+7627967 Compared the accuracy of both model before and after removing the feature.
+9a7507e Analyse the important feature using the graphical method.
+e51598f Analyse the least and most important feature using feature_importance_ function.
+515168b find the weak topics in ML.
+92bac4f Make the pipeline and compare the accuracy whithout pipeline.
+f3494f1 Updated the README.md file for the model .
+be17719 Rarrange the structure of the model.
+310cc28 Implemented the randomized_search for the same data and obtaind the best random tunning setting.
+6a1cf99 Implemented the grid_searchCV for obtaining the best tunning for the student data.
+78294b1 Learned and implemented the Hyperparameter_tuning and improve tthe average accuracy and also reduce the difference in accuracy in every fold.
+b2f8245 Learned how to cross validate the model for better performance .
+c9567df started the cross_validation.
+b2fbe55 Find the confusion matrix and also calculated the  precision_score,     recall_score,     f1_score,     classification_report.
+5888c55 Analyse the accuracy of the prediction of the random forest model over 10000 student data.
+e9c9f43 Learned the why the spliting of data is happening and how to split data for maximum accuracy.
+e0a3a3d Learned the scaling feature function.
+0bad8a2  added the documentation for the feature scalling .
+9b76111 feature_scaled the student dataset.
+ed79cb6 Ambiguity has been solved for reading the csv file.
+f172fc1 Error occur in finding the csv file.
+90505f7 Learn what to with the duplicate data .
+e79effa Learn how to handle with missing data in dataset
+c11cf98 loaddata
+990a88e load the data_set
+040b684 updating the dataset of 1000 students
+de9605c random forest on 500 data set
+cca09bc create the file of random forest
+bd69d7b accuracy,precision_score,recall and F1_score and confusion_matrix
+d318fa1 Feature Engineering
+cb6ca22 decision tree ,KNN and model_comparison
+859061a Histogram
+d5ad57a line plot and scater plot code
+cafbcab Classification
+6395a27 Updating the readme.md file
+9f0aef5 First Project of Linearregression
+eed2376 comment are added in split_data
+2e58145 train_test_split
+8d4e42e Initial commit
+4583b63 day 1 completed
+3cbcea5 Initial commit
