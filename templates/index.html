@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Student Performance Predictor</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🎓 Student Performance Predictor</h1>
+
+    <p class="subtitle">
+        Predict whether a student is likely to be placed using Machine Learning.
+    </p>
+
+    <form action="/predict" method="POST">
+
+        <div class="input-group">
+
+            <label>Study Hours</label>
+
+            <input
+                type="number"
+                name="study_hours"
+                min="0"
+                max="24"
+                required>
+
+        </div>
+
+        <div class="input-group">
+
+            <label>Attendance (%)</label>
+
+            <input
+                type="number"
+                name="attendance"
+                min="0"
+                max="100"
+                required>
+
+        </div>
+
+        <div class="input-group">
+
+            <label>Sleep Hours</label>
+
+            <input
+                type="number"
+                name="sleep_hours"
+                min="0"
+                max="24"
+                required>
+
+        </div>
+
+        <div class="input-group">
+
+            <label>Internet Usage (Hours)</label>
+
+            <input
+                type="number"
+                name="internet_usage"
+                min="0"
+                max="24"
+                required>
+
+        </div>
+
+        <div class="input-group">
+
+            <label>Assignments Completed</label>
+
+            <input
+                type="number"
+                name="assignments_completed"
+                min="0"
+                required>
+
+        </div>
+
+        <div class="input-group">
+
+            <label>Previous Score</label>
+
+            <input
+                type="number"
+                name="previous_score"
+                min="0"
+                max="100"
+                required>
+
+        </div>
+
+        <button type="submit">
+
+            Predict Performance
+
+        </button>
+
+    </form>
+
+
+    {% if prediction %}
+
+    <div class="result">
+
+        <h2>{{ prediction }}</h2>
+
+        <p>
+
+            Confidence :
+            <strong>{{ confidence }}%</strong>
+
+        </p>
+
+    </div>
+
+    {% endif %}
+
+
+    {% if error %}
+
+    <div class="error">
+
+        {{ error }}
+
+    </div>
+
+    {% endif %}
+
+</div>
+
+</body>
+
+</html>
