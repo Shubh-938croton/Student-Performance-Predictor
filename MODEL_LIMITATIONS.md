@@ -1,30 +1,51 @@
 # Model Limitations
 
-## Dataset
+## Dataset Limitations
 
-- Training data contains 10,000 rows.
-- Placement distribution:
-  - Placed: 8356
-  - Not Placed: 1644
+The model was trained on a dataset containing **10,000 records**.
 
-## Feature Ranges
+### Class Distribution
 
-- Study Hours: 1–11
-- Attendance: 40–100
-- Sleep Hours: 4–9
-- Internet Usage: 1–11
-- Assignments Completed: 0–20
-- Previous Score: 35–95
+- Placed: 8,356
+- Not Placed: 1,644
 
-## Observations
+The dataset is imbalanced, with significantly more placed students than
+not-placed students. Therefore, accuracy alone may not fully represent
+model performance.
 
-- Model should not be used outside these ranges.
-- Input validation added to Flask application.
-- Better dataset required for wider generalization.
+## Training Feature Ranges
+
+The model was trained using values approximately within the following ranges:
+
+| Feature | Training Range |
+|---|---|
+| Study Hours | 1–11 hours |
+| Attendance | 40–100% |
+| Sleep Hours | 4–9 hours |
+| Internet Usage | 1–11 hours |
+| Assignments Completed | 0–20 |
+| Previous Score | 35–95 |
+
+Predictions for values significantly outside these ranges may be unreliable
+because the model has not been trained on such examples.
+
+The Flask application performs input validation to reduce invalid or
+out-of-distribution inputs.
+
+## Generalization Limitations
+
+- The model's predictions depend heavily on the quality of the training data.
+- The dataset may not accurately represent students from different colleges,
+  regions, courses, or placement processes.
+- Placement depends on many factors that are not included in the current
+  feature set.
+- The prediction should not be treated as a guarantee of actual placement.
 
 ## Future Improvements
 
-- Use real-world placement dataset.
-- Add more predictive features.
-- Improve class balance.
-- Add SHAP explainability.
+- Train on a real-world placement dataset.
+- Collect data from multiple institutions.
+- Add additional predictive features.
+- Improve handling of class imbalance.
+- Evaluate precision, recall, F1-score, and ROC-AUC in addition to accuracy.
+- Add SHAP-based model explainability.
