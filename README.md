@@ -158,13 +158,46 @@ The model predicts placement status using the following features:
 
 # 🤖 Machine Learning Model
 
-### Algorithm Used
+## Algorithm Used
 
 **Random Forest Classifier**
 
-The model was trained using **Scikit-learn** and saved using **Joblib**, allowing it to be integrated directly into the Flask application without retraining.
+The model was trained using Scikit-learn and serialized
+using Joblib for integration with the Flask application.
 
----
+## Model Performance
+
+During experimentation, the tuned Random Forest
+classifier achieved the following results:
+
+| Metric | Result |
+|--------|--------|
+| Test Accuracy | 90.2% |
+| Cross-Validation Accuracy | 89.75% |
+| Algorithm | Random Forest |
+| Hyperparameter Tuning | GridSearchCV / RandomizedSearchCV |
+
+**Note:** These results are from model experimentation.
+The deployed model's performance should be verified
+against the saved model and evaluation pipeline.
+
+## Feature Importance
+
+The model uses six features:
+
+1. Study Hours
+2. Previous Score
+3. Assignments Completed
+4. Attendance
+5. Internet Usage
+6. Sleep Hours
+
+## Model Limitations
+
+- Predictions depend on the quality of the training data.
+- The model does not guarantee actual placement outcomes.
+- The dataset may not represent real-world placement conditions.
+- Predictions should be treated as estimates rather than decisions.
 
 # 🌐 Web Application
 
